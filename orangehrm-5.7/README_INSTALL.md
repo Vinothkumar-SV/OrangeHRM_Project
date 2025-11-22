@@ -142,12 +142,4 @@ Use the admin credentials you created during installation.
 
 **For detailed troubleshooting, see [XAMPP_SETUP_GUIDE.md](XAMPP_SETUP_GUIDE.md)**
 
-## 📞 Support
-
-- **Documentation:** https://starterhelp.orangehrm.com
-- **Demo:** https://opensource-demo.orangehrmlive.com
-- **Email:** ossupport@orangehrm.com
-
----
-
-**Ready to start?** Run `.\INSTALL.bat` and follow the prompts! 🚀
+--
