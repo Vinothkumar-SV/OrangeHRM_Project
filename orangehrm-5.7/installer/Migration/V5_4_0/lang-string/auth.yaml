@@ -1,0 +1,58 @@
+langStrings:
+  -
+    value: '{count,plural, one{Should have at least 1 character} other{Should have at least # characters}}'
+    unitId: password_min_length
+  -
+    value: '{count,plural, one{Should not exceed 1 character} other{Should not exceed # characters}}'
+    unitId: password_max_length
+  -
+    value: '{count,plural, one{Your password must contain minimum 1 lower-case letter} other{Your password must contain minimum # lower-case letters}}'
+    unitId: password_n_lowercase_letters
+  -
+    value: '{count,plural, one{Your password must contain minimum 1 upper-case letter} other{Your password must contain minimum # upper-case letters}}'
+    unitId: password_n_uppercase_letters
+  -
+    value: '{count,plural, one{Your password must contain minimum 1 number} other{Your password must contain minimum # numbers}}'
+    unitId: password_n_numbers
+  -
+    value: '{count,plural, one{Your password must contain minimum 1 special character} other{Your password must contain minimum # special characters}}'
+    unitId: password_n_special_characters
+  -
+    value: 'Your password should not contain spaces'
+    unitId: password_spaces_not_allowed
+  -
+    value: 'Your password meets the minimum requirements, but it could be guessable'
+    unitId: password_could_be_guessable
+  -
+    value: 'Change Weak Password'
+    unitId: change_weak_password
+  -
+    value: 'Your current password is weak. Please choose a stronger password.'
+    unitId: password_not_strong
+  -
+    value: 'Invalid password reset code'
+    unitId: invalid_password_reset_code
+  -
+    value: '{clientName} would like to'
+    unitId: client_name_would_like_to
+  -
+    value: 'Access and manage your data'
+    unitId: access_and_manage_your_data
+  -
+    value: 'Perform actions on your behalf'
+    unitId: perform_actions_on_your_behalf
+  -
+    value: 'Do you want to allow access?'
+    unitId: do_you_want_to_allow_access
+  -
+    value: 'Deny'
+    unitId: deny
+  -
+    value: 'Allow Access'
+    unitId: allow_access
+  -
+    value: 'This request is invalid'
+    unitId: this_request_is_invalid
+  -
+    value: 'Mobile app is not enabled. Please contact your OrangeHRM administrator.'
+    unitId: mobile_client_disabled_error

@@ -1,0 +1,19 @@
+langStrings:
+  -
+    value: 'Provider URL'
+    unitId: url
+  -
+    value: 'Add Provider'
+    unitId: add_provider
+  -
+    value: 'Edit Provider'
+    unitId: edit_provider
+  -
+    value: 'Provider List'
+    unitId: provider_list
+  -
+    value: 'No User Found'
+    unitId: no_user_found
+  -
+    value: 'Multiple User Returned'
+    unitId: multiple_user_returned

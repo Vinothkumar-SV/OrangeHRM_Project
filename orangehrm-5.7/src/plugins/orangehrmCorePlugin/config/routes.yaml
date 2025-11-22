@@ -1,0 +1,39 @@
+apiv2_core_data_groups:
+  path: /api/v2/core/data-groups
+  controller: OrangeHRM\Core\Controller\Rest\V2\GenericRestController::handle
+  methods: [ GET, POST, DELETE ]
+  defaults:
+    _api: OrangeHRM\Core\Api\Rest\DataGroupAPI
+
+apiv2_core_about_organization:
+  path: /api/v2/core/about
+  controller: OrangeHRM\Core\Controller\Rest\V2\GenericRestController::handle
+  methods: [ GET ]
+  defaults:
+    id: 0
+    _api: OrangeHRM\Core\Api\Rest\AboutOrganizationAPI
+
+push_events:
+  path: /events/push
+  controller: OrangeHRM\Core\Registration\Controller\PushEventController::handle
+  methods: [ POST ]
+
+##########################
+#     Public APIs
+##########################
+
+apiv2_core_public_api_version:
+  path: /api/v2/core/public/version
+  controller: OrangeHRM\Core\Controller\Rest\V2\GenericPublicRestController::handle
+  methods: [ GET ]
+  defaults:
+    id: 0
+    _api:  OrangeHRM\Core\PublicApi\VersionAPI
+
+apiv2_core_validate_uniqueness:
+  path: /api/v2/core/validation/unique
+  controller: OrangeHRM\Core\Controller\Rest\V2\GenericRestController::handle
+  methods: [ GET ]
+  defaults:
+    _key: value
+    _api: OrangeHRM\Core\Api\Rest\ValidationUniqueAPI

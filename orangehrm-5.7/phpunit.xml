@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="src/test/phpunit/Util/bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true" convertNoticesToExceptions="true" convertWarningsToExceptions="true"
+         beStrictAboutOutputDuringTests="true"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+  <coverage>
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+    <exclude>
+      <directory>src/client</directory>
+      <directory>src/cache</directory>
+      <directory>src/config</directory>
+      <directory>src/lib</directory>
+      <directory>src/web</directory>
+      <directory>src/vendor</directory>
+      <directory>src/test</directory>
+      <directory>src/plugins/**/test</directory>
+    </exclude>
+  </coverage>
+  <testsuites>
+    <testsuite name="Admin">
+      <directory>src/plugins/orangehrmAdminPlugin/test</directory>
+    </testsuite>
+    <testsuite name="Authentication">
+      <directory>src/plugins/orangehrmAuthenticationPlugin/test</directory>
+    </testsuite>
+    <testsuite name="Core">
+      <directory>src/plugins/orangehrmCorePlugin/test</directory>
+    </testsuite>
+    <testsuite name="Leave">
+      <directory>src/plugins/orangehrmLeavePlugin/test/Dao</directory>
+      <directory>src/plugins/orangehrmLeavePlugin/test</directory>
+    </testsuite>
+    <testsuite name="Pim">
+      <directory>src/plugins/orangehrmPimPlugin/test</directory>
+    </testsuite>
+    <testsuite name="OAuth">
+      <directory>src/plugins/orangehrmCoreOAuthPlugin/test</directory>
+    </testsuite>
+    <testsuite name="Time">
+      <directory>src/plugins/orangehrmTimePlugin/test</directory>
+    </testsuite>
+    <testsuite name="Attendance">
+      <directory>src/plugins/orangehrmAttendancePlugin/test</directory>
+    </testsuite>
+    <testsuite name="Maintenance">
+      <directory>src/plugins/orangehrmMaintenancePlugin/test</directory>
+    </testsuite>
+    <testsuite name="I18N">
+      <directory>src/plugins/orangehrmI18NPlugin/test</directory>
+    </testsuite>
+    <testsuite name="Performance">
+      <directory>src/plugins/orangehrmPerformancePlugin/test</directory>
+    </testsuite>
+    <testsuite name="Recruitment">
+      <directory>src/plugins/orangehrmRecruitmentPlugin/test</directory>
+    </testsuite>
+    <testsuite name="Directory">
+      <directory>src/plugins/orangehrmCorporateDirectoryPlugin/test</directory>
+    </testsuite>
+    <testsuite name="CorporateBranding">
+      <directory>src/plugins/orangehrmCorporateBrandingPlugin/test</directory>
+    </testsuite>
+    <testsuite name="Dashboard">
+      <directory>src/plugins/orangehrmDashboardPlugin/test</directory>
+    </testsuite>
+    <testsuite name="LDAP">
+      <directory>src/plugins/orangehrmLDAPAuthenticationPlugin/test</directory>
+    </testsuite>
+    <testsuite name="Buzz">
+      <directory>src/plugins/orangehrmBuzzPlugin/test</directory>
+    </testsuite>
+    <testsuite name="Claim">
+      <directory>src/plugins/orangehrmClaimPlugin/test</directory>
+    </testsuite>
+    <testsuite name="Help">
+      <directory>src/plugins/orangehrmHelpPlugin/test</directory>
+    </testsuite>
+    <testsuite name="Mobile">
+      <directory>src/plugins/orangehrmMobilePlugin/test</directory>
+    </testsuite>
+    <testsuite name="OpenId">
+      <directory>src/plugins/orangehrmOpenidAuthenticationPlugin/test</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

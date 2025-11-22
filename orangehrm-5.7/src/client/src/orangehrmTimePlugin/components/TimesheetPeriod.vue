@@ -1,0 +1,47 @@
+<!--
+/**
+ * OrangeHRM is a comprehensive Human Resource Management (HRM) System that captures
+ * all the essential functionalities required for any enterprise.
+ * Copyright (C) 2006 OrangeHRM Inc., http://www.orangehrm.com
+ *
+ * OrangeHRM is free software: you can redistribute it and/or modify it under the terms of
+ * the GNU General Public License as published by the Free Software Foundation, either
+ * version 3 of the License, or (at your option) any later version.
+ *
+ * OrangeHRM is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with OrangeHRM.
+ * If not, see <https://www.gnu.org/licenses/>.
+ */
+ -->
+
+<template>
+  <div class="orangehrm-timeperiod-picker">
+    <oxd-text tag="p" class="orangehrm-timeperiod-title">
+      {{ $t('time.timesheet_period') }}
+    </oxd-text>
+    <oxd-icon-button
+      class="orangehrm-timeperiod-icon --prev"
+      name="chevron-left"
+      @click="$emit('previous', $event)"
+    />
+    <date-input v-bind="$attrs" />
+    <oxd-icon-button
+      class="orangehrm-timeperiod-icon --next"
+      name="chevron-right"
+      @click="$emit('next', $event)"
+    />
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'TimesheetPeriod',
+  inheritAttrs: false,
+  emits: ['previous', 'next'],
+};
+</script>
+
+<style src="./timesheet-period.scss" lang="scss" scoped></style>
